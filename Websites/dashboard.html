@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyMate Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(images\ \(1\).jpg);">
+
+<nav>
+  <h2>StudyMate</h2>
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<div class="dashboard">
+
+ 
+  <section>
+    <h3>My Notes</h3>
+    <textarea id="noteInput" placeholder="Write your note..."></textarea>
+    <button onclick="saveNote()">Save Note</button>
+    <ul id="notesList"></ul>
+  </section>
+
+  <section>
+    <h3>My Tasks</h3>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
